@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.0.0
-      - run: wget -O version.json "https://api.launchpad.net/devel/~ondrej/+archive/ubuntu/php?ws.op=getPublishedSources&exact_match=true&source_name=php8.1&status=Published&distro_series=https://api.launchpad.net/devel/ubuntu/jammy"
+      - run: wget -O version.json "https://api.launchpad.net/devel/~ondrej/+archive/ubuntu/php?ws.op=getPublishedSources&exact_match=true&source_name=php8.1&status=Published&distro_series=https://api.launchpad.net/devel/ubuntu/focal"
       - name: Get latest version
         id: version
         uses: notiz-dev/github-action-json-property@release
